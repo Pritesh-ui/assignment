@@ -6,15 +6,12 @@ import { useParams } from "react-router-dom";
 import {
   fetchCountry,
   fetchCountrytime,
-  getUserPostID,
   getUserByID,
   postdata,
 } from "../../api";
 import "./userDetails.css";
 
 const UserDetails = () => {
-
-  
   //All the Usestates
   const { id } = useParams();
   const [user, setUser] = useState();
@@ -152,7 +149,6 @@ const UserDetails = () => {
     }
   }, [formattedTime]);
 
-  
   return (
     <div className="box">
       <div className="cardcontent">
